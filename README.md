@@ -1,1 +1,6 @@
-# OOP-C_Plus_Plus
+
+Hi everybody
+
+I'm learning C++ object-oriented programming
+
+This is my small project ^^!
