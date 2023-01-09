@@ -41,10 +41,10 @@ public:
     virtual long salary() = 0;
     static vector<Person*> findPerson(vector<Person*>p){
         vector<Person*>find;
-        string find_add = "HH";
+
         for (int i = 0; i < p.size(); i++)
         {
-            if (p[i]->add == find_add)            {
+            if (p[i]->add == "HN")            {
                 find.push_back(p[i]);
             }
             

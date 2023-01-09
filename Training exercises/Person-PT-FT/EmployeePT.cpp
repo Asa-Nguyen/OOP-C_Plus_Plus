@@ -25,20 +25,25 @@ public:
         cout<<"Money: "<<money<<endl;
         cout<<"Salary: "<<salary()<<endl;
     }
-    vector<EmployeePT> getMaxSalary(vector<EmployeePT> e){
-        vector<EmployeePT>max_salary;
-        long max = e[0].salary();
-        for (int i = 0; i < e.size(); i++)
-        {
-            if(max<e[0].salary())
-                max = e[0].salary();
-        }
-        for (int i = 0; i < e.size(); i++)
-        {
-            if(e[i].salary()==max)
-                max_salary.push_back(e[i]);
-        }
-            return max_salary;
-    }
+    static vector<EmployeePT> getMaxSalary(vector<EmployeePT> pt)
+	{
+		long max = pt[0].salary();
+		for (int i = 1; i < pt.size(); i++)
+		{
+			if (pt[i].salary() > max)
+			{
+				max = pt[i].salary();
+			}
+		}
+		vector<EmployeePT> v;
+		for (int i = 0; i < pt.size(); i++)
+		{
+			if (pt[i].salary() == max)
+			{
+				v.push_back(pt[i]);
+			}
+		}
+		return v;
+	}
 };
 
