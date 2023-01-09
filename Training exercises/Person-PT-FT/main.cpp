@@ -1,6 +1,7 @@
 #include "Person.cpp"
 #include "EmployeeFT.cpp"
 #include "EmployeePT.cpp"
+#pragma once
 int main()
 {
 	vector<Person*> s;

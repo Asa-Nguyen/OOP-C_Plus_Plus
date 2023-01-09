@@ -1,4 +1,5 @@
 #include"Person.cpp"
+#pragma once
 class EmployeeFT : public Person{
     private:
         int day;

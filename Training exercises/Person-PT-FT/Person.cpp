@@ -2,6 +2,7 @@
 using namespace std;
 #include<vector>
 #pragma once
+
 class Person
 {
 private:
