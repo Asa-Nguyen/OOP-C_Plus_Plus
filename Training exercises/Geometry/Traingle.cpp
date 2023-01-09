@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-class Traingle{
+class Traingle : public Geometry{
     private:
         int a;
         int b;
