@@ -44,14 +44,11 @@ public:
 
         for (int i = 0; i < p.size(); i++)
         {
-            if (p[i]->add == "HN")            {
+            if (p[i]->add == "HN"){
                 find.push_back(p[i]);
             }
-            
         }
         return find;
-        
-        
     }
 };
 
